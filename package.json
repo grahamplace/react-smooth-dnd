@@ -1,5 +1,5 @@
 {
-  "name": "@edorivai/react-smooth-dnd",
+  "name": "@grahamplace/react-smooth-dnd",
   "version": "0.11.2",
   "description": "Drag and Drop library",
   "main": "./dist/index.js",
@@ -29,7 +29,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edorivai/react-smooth-dnd.git"
+    "url": "https://github.com/grahamplace/react-smooth-dnd.git"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
