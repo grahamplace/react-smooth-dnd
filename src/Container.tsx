@@ -118,7 +118,7 @@ class Container extends Component<PropsWithChildren<ContainerProps>> {
     } else {
       return (
         <div
-          style={this.props.className}
+          className={this.props.className}
           style={this.props.style}
           ref={this.containerRef}
         >
