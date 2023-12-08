@@ -13,6 +13,7 @@ container.wrapChild = false;
 interface ContainerProps extends ContainerOptions {
   render?: (rootRef: React.RefObject<any>) => React.ReactElement;
   style?: CSSProperties;
+  className?: string;
 }
 
 class Container extends Component<PropsWithChildren<ContainerProps>> {
@@ -116,7 +117,11 @@ class Container extends Component<PropsWithChildren<ContainerProps>> {
       return this.props.render(this.containerRef);
     } else {
       return (
-        <div style={this.props.style} ref={this.containerRef}>
+        <div
+          style={this.props.className}
+          style={this.props.style}
+          ref={this.containerRef}
+        >
           {this.props.children}
         </div>
       );
